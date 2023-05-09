@@ -243,7 +243,7 @@ h4,
 h5,
 h6 {
   font-family: Nunito Sans, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
-  font-weight: 900;
+  font-weight: 800;
   font-style: italic;
 }
 
@@ -387,8 +387,7 @@ button,
   margin-top: 0.5em;
   margin-right: 0.5em;
   margin-bottom: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+
   background-color: rgba(0, 0, 0, 0.01);
   border: 0;
   border-radius: 0;
