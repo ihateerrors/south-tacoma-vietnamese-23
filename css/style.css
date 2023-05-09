@@ -1,3 +1,12 @@
+.hero {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.3em;
+  padding: 10px 0;
+}
+html {
+  scroll-padding-top: 5%;
+}
+
 form#feedbackForm {
   background-color: #eaeaea;
   border: 2px solid #d6148e;
@@ -7,6 +16,7 @@ form#feedbackForm {
 
 h2 {
   margin-top: 10px;
+  font-size: 2em;
 }
 h1 {
   font-size: 1.75em;
@@ -105,8 +115,53 @@ h3 {
   margin: auto;
 }
 
-st {
-  font-weight: 900;
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #ffffff;
+  color: #2a7997;
+  cursor: pointer;
+  /* padding: 18px; */
+  width: 100%;
+  text-align: left;
+  border-bottom: dashed;
+  border-bottom-width: thin;
+  outline: none;
+  margin-top: -10px;
+  scroll-margin-top: 200px;
+  font-size: 24px;
+  font-style: italic;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+  background-color: rgb(255, 255, 255);
+  color: #2a7897;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  /* padding: 0 18px; */
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  transition: max-height 02.2s ease-out;
+}
+
+.accordion:after {
+  content: "\02795"; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: rgb(255, 255, 255);
+  float: right;
+  margin-left: 5px;
+}
+
+.accordion.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+p {
+  font-size: 1.15em;
 }
 .topdiv {
   background-color: #d9d9d9;
@@ -158,9 +213,9 @@ st {
   font-weight: 800;
   font-family: "Nunito Sans", Arial, sans-serif;
   color: #505050;
-  font-size: 15px;
+  font-size: 17px;
   font-style: italic;
-  margin: -8px 3px -3px 3px;
+  margin: -5px 15px 0 3px;
 }
 
 .dropdown-menu {
@@ -181,7 +236,8 @@ st {
   outline: none;
   font-size: 24px;
   font-style: italic;
-  display: none;
+  padding-top: 20px;
+  margin-top: 20px;
 }
 html {
   scroll-behavior: smooth;
@@ -191,10 +247,9 @@ li {
   font-size: 1.15em;
 }
 h4 {
-  font-size: 1em;
+  font-size: 1.35em;
   font-style: italic;
-  padding: 0 0 0 10px;
-  margin: 0;
+  padding-left: 10px;
 }
 .pix {
   padding: 20px 20px 20px 0px;
@@ -219,11 +274,16 @@ h4 {
 
 p,
 li {
-  font-size: 1.1em;
+  font-size: 1em;
   font-family: Hind, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
 }
 .container {
-  max-width: 998px;
+  padding-left: 15px;
+  max-width: 1100px;
+}
+
+body {
+  position: relative;
 }
 
 .bboxHead {
@@ -239,9 +299,6 @@ li {
   border: 0.5px solid #000000;
 }
 
-.borderbox3 {
-  border: 0.5px solid #000000;
-}
 .bbox {
   color: #2b376e;
 }
@@ -254,122 +311,11 @@ li {
   background-color: #2b376e;
   border: 0.5px solid #000000;
 }
-.bo {
-  border: 0.5px solid #8b8b8b;
-}
-.hero {
-  font-family: "Nunito Sans", sans-serif;
-}
-a:link,
-a:visited,
-a:hover,
-a:focus,
-a:active {
-  color: #2b376e;
-  font-size: 18px;
-}
-carousel-indicators {
-  color: #000;
-}
-.accordion {
-  background-color: #ffffff;
-  color: #2a7997;
-  cursor: pointer;
-  /* padding: 18px; */
-  width: 100%;
-  text-align: left;
-  border-bottom: dashed;
-  border-bottom-width: thin;
-  outline: none;
-  margin-top: -10px;
-  scroll-margin-top: 200px;
-  font-size: 24px;
-  font-style: italic;
+
+.alert-x {
+  background-color: #f5a623;
 }
 
-/* Style the accordion panel. Note: hidden by default */
-.panel {
-  /* padding: 0 18px; */
-  background-color: white;
-  display: none;
-  overflow: hidden;
-  transition: max-height 02.2s ease-out;
-}
-
-.accordion:after {
-  content: "\02795"; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
-  color: rgb(255, 255, 255);
-  float: right;
-  margin-left: 5px;
-}
-.accordion {
-  background-color: #ffffff;
-  color: #2a7997;
-  cursor: pointer;
-  /* padding: 18px; */
-  width: 100%;
-  text-align: left;
-  border-bottom: dashed;
-  border-bottom-width: thin;
-  outline: none;
-  margin-top: -10px;
-  scroll-margin-top: 200px;
-  font-size: 24px;
-  font-style: italic;
-}
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active,
-.accordion:hover {
-  background-color: #f8f8f8;
-  color: #2a7897;
-}
-
-/* Style the accordion panel. Note: hidden by default */
-.panel {
-  /* padding: 0 18px; */
-  background-color: white;
-  display: none;
-  overflow: hidden;
-  transition: max-height 02.2s ease-out;
-}
-
-.accordion:after {
-  content: "\02795"; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
-  color: rgb(255, 255, 255);
-  float: right;
-  margin-left: 5px;
-}
-.bk {
-  background-color: rgba(0, 0, 0, 0.4);
-}
-.s5 {
-  max-height: 150px;
-}
-.s400 {
-  max-width: 400px;
-}
-.det1 {
-  border-top: 1px dashed rgba(0, 0, 0, 0.3);
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.3);
-}
-.det2 {
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.3);
-}
-.sum-text {
-  color: rgba(0, 0, 0, 0.5);
-  font-weight: bold;
-  font-size: 20px;
-}
-.plus {
-  color: rgba(0, 0, 0, 0.5);
-  float: right;
-}
-.headhead {
-  padding-top: 15px;
-  font-size: 38px;
-}
-html {
-  scroll-padding-top: 5%;
+a {
+  color: #007bc1;
 }
