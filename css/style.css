@@ -4,7 +4,7 @@
   padding: 10px 0;
 }
 html {
-  scroll-padding-top: 5%;
+  scroll-padding-top: 3%;
 }
 
 form#feedbackForm {
@@ -133,7 +133,7 @@ h3 {
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active,
+.accordion.active,
 .accordion:hover {
   background-color: rgb(255, 255, 255);
   color: #2a7897;
@@ -318,4 +318,50 @@ body {
 
 a {
   color: #007bc1;
+}
+
+nav.top_nav {
+  text-align: center;
+}
+
+nav.top_nav li {
+  display: inline;
+}
+
+nav.top_nav a {
+  display: inline-block;
+  position: relative;
+}
+
+nav.top_nav a:hover {
+  color: #2a7997;
+}
+
+nav.top_nav a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: -1px;
+  left: 0;
+  background-color: #2a7997;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.15s ease-in-out 0s;
+  transition: all 0.15s ease-in-out 0s;
+}
+
+nav.top_nav a:hover:before,
+nav.top_nav a.active:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+/* 
+.active {
+  color: #2a7997;
+} */
+.nulx {
+  text-decoration: underline;
 }
