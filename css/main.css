@@ -904,7 +904,7 @@ header#mainheader .row .col-md-6:nth-of-type(2) .goog-logo-link:link {
         margin: 0.6em 0 0.3em 0;
     }
 }
-
+/* 
 @media only screen and (max-width: 768px) {
     header#mainheader .row .col-md-6:nth-of-type(2) p {
         font-size: 2rem;
@@ -925,8 +925,7 @@ header#mainheader .row .col-md-6:nth-of-type(2) .goog-logo-link:link {
         margin: 6px 0;
     }
 } */
-
-@-webkit-keyframes sweep {
+*/ @-webkit-keyframes sweep {
   from {
     opacity: 0;
     -webkit-transform: translateY(-10px);

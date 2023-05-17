@@ -57,3 +57,13 @@ jQuery(".tab-row a").each(function () {
     }, 0);
   });
 });
+
+$(window).scroll(function () {
+  var s = $(window).scrollTop(),
+    d = $(document).height(),
+    c = $(window).height();
+  scrollPercent = (s / (d - c)) * 100;
+  var position = scrollPercent;
+
+  $("#progressbar").attr("value", position);
+});
