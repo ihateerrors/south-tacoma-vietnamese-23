@@ -151,7 +151,7 @@ h3 {
 
 .accordion:after {
   content: "\02795"; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
+  font-size: 18px;
   color: rgb(255, 255, 255);
   float: right;
   margin-left: 5px;
@@ -243,10 +243,7 @@ p {
 html {
   scroll-behavior: smooth;
 }
-li {
-  font-family: "Nunito Sans", Arial, sans-serif;
-  font-size: 1.15em;
-}
+
 h4 {
   font-size: 1.35em;
   font-style: italic;
@@ -273,14 +270,13 @@ h4 {
   margin-left: 5px;
 }
 
-p,
 li {
-  font-size: 1.2em;
+  font-size: 1.15em;
   font-family: Hind, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
 }
-p {
+/* p {
   padding-bottom: 15px;
-}
+} */
 .container {
   padding-left: 25px;
   max-width: 1100px;
@@ -405,5 +401,8 @@ progress::-moz-progress-bar {
   background-color: #2a7997 !important;
 }
 progress {
+  color: #2a7997;
+}
+Segoe UI Symbol {
   color: #2a7997;
 }
