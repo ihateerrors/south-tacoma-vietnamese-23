@@ -513,10 +513,10 @@ i.fa.fa-check {
 }
 
 /* Fills the div and centers the image and text */
-figure {
+/* figure {
   width: 100%;
   margin: 1em 0;
-}
+} */
 
 .stlineblue {
   color: #007cad;
