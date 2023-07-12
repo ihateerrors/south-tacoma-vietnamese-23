@@ -59,6 +59,7 @@
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/base.css" />
   <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+  <link rel="stylesheet" type="text/css" href="css/override.css" media="all" />
   <!-- <script src="js/vendor/modernizr-2.8.3.min.js"></script> -->
   <script>
             (function (i, s, o, g, r, a, m) {
@@ -196,11 +197,43 @@
               including the cost and construction considerations for each! 
               You can even give us your opinion on which improvements you’d like to see first!
             </p>
-            <figure>
-              <img src="img/lakewood-map-placeholder.png" alt="">
-            <figcaption></figcaption>
-          </figure>
-          </div>
+            <!-- Lightbox Modal - pt1 -->
+            <div class="pt-5">
+    
+                <a role="button" class="btn p-2 bo" data-bs-toggle="modal" data-bs-target="#mapModal">
+                  <img src="img/lakewood-map-placeholder.png"
+                    alt="Map showing the three OMF South alternatives in Kent and Federal Way, with inset maps showing more detailed locations. The South 336th Street Alternative is indicated as the preferred alternative."
+                    class="" />
+                  <figcaption class="s2"> The three alternatives for OMF South being studied in the EIS. &nbsp;&nbsp;|
+                    &nbsp;&nbsp;Click to enlarge</figcaption>
+                </a>
+    
+                <!-- Lightbox Modal - pt2 -->
+                <div class="">
+                  <div class="modal fade" id="mapModal" tabindex="-1" aria-labelledby="mapModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <!-- <h3>Schedule</h3> -->
+    
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="img/lakewood-map-placeholder.png"
+                            alt="Map showing the three OMF South alternatives in Kent and Federal Way, with inset maps showing more detailed locations. The South 336th Street Alternative is indicated as the preferred alternative. " />
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn pbutton" data-bs-dismiss="modal">
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end lightbox -->
         </div>
 
         <!-- Right-column -->
@@ -267,12 +300,14 @@
         <div class="col-md-7">
           <h3>Building as many improvements to Lakewood Station area as possible</h3>
           <figure>
-            <a href="#">
+            
               <img class="img-fluid" src="http://via.placeholder.com/640x360" alt="">
-            </a>
+         
           <figcaption>
-            (TBD text about needing help with prioritization, or if we have enough money to build them all) 
-            | Click to read more
+            <a href="#">
+            (TBD text about needing help with prioritization) 
+            | Click to read more   
+            </a>
             </figcaption>
         </figure>
           <p class="leady">Our commitment to better connections to Lakewood Station</p>
@@ -299,23 +334,75 @@
             But we want to give you another opportunity to let us know what you think are the most 
             important projects to build! Answer some survey questions below or email us at [email address] to have your voices heard.           </p>
             <p>Want more details about each of the improvements? Look at our <a href="#" target="_blank">Lakewood Improvements booklet!</a></p>
-          <div>
-            <p>&nbsp;</p>
+            
+            <h3>More direct connections to Lakewood Station from 115th and Bridgeport Way</h3>
+            <figure>
+              <img class="img-fluid" src="img/lakewood-station-entrance.png" alt="">
+              <figcaption>
+                <a href="#">
+                  These improvements will transform how you get to Lakewood Station from the north if you’re walking, rolling, or biking. 
+                  | Click to read more
+                </a>
+              </figcaption>
+          </figure>
+          <h3>A more direct connection to the station for neighbors to the north and west</h3>
+          <p>
+            Right now, local residents can reach the station from the north via Kendrick Street 
+            (in blue on map) or via a long route on Bridgeport Way and Pacific Highway South (red). 
+            The new path at the end of 115th (black on the map below) 
+            will make this trip much faster and more convenient. 
+          </p>
+     <!-- Lightbox Modal - pt1 -->
+     <div class="pt-5">
+    
+      <a role="button" class="btn p-2 bo" data-bs-toggle="modal" data-bs-target="#mapModal">
+        <img src="img/north-west-placeholder.png"
+          alt=""
+          class="" />
+        <figcaption class="s2"> |
+          &nbsp;&nbsp;Click to enlarge</figcaption>
+      </a>
+
+      <!-- Lightbox Modal - pt2 -->
+      <div class="">
+        <div class="modal fade" id="mapModal" tabindex="-1" aria-labelledby="mapModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <!-- <h3>Schedule</h3> -->
+
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="img/north-west-placeholder.png"
+                  alt="" />
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn pbutton" data-bs-dismiss="modal">
+                  Close
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-md-5">
-          <div></div>
+      </div>
+    </div>
+  </div>
+  <!-- end lightbox -->
+            <div>
+              <p>&nbsp;</p>
+            </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div id="alternatives">
+  <div id="coloring">
     <div class="entry-header">
       <div class="container">
         <div class="row">
           <div class="col">
-            <h2>Alternatives</h2>
+            <h2>Coloring activity</h2>
           </div>
         </div>
       </div>
@@ -324,105 +411,376 @@
       <div class="row">
         <div class="col-md-7">
           <p class="leady me-3">
-            On Dec. 16, 2021, the Sound Transit Board identified the South
-            336th Street site in Federal Way as the preferred alternative for
-            the location for OMF South. A preferred alternative is a statement
-            of where the agency is leaning based on information available at
-            the time. It's not a final decision.
+            At our summer events, youth and families showed off their coloring skills and excitement for this project. Check out some of their creations below! 
           </p>
-          <h3 class="stlineblue">
-            South 336th Street Alternative (preferred alternative)
-          </h3>
-          <ul>
-            <li>
-              The South 336th Street Alternative is in Federal Way, between
-              South 336th Street and South 341st Place, and between I-5 and SR
-              99. The site footprint is approximately 65 acres.
-            </li>
-            <li>
-              This site would require 1.4 miles of connecting light rail track
-              from the Federal Way Link Extension that will be part of the
-              <a href="https://www.soundtransit.org/system-expansion/tacoma-dome-link-extension" target="_blank">
-                Tacoma Dome Link Extension</a>. The preferred alternative also includes a test track to
-              prepare new vehicles for service. The test track would run
-              parallel and on the east side of the connecting light rail
-              tracks.
-            </li>
-          </ul>
+         <p>
+          See some examples below of some of the local Lakewood resident’s artwork. If you weren’t able to attend these events, you can also download and print your own. Feel free to share your artwork with us at (email). 
+         </p>
+         <!-- carousel -->
+<div>
+  <div
+    id="carouselExampleCaptions"
+    class="carousel slide"
+    data-bs-ride="carousel"
+  >
+    <div class="carousel-indicators">
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="0"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="1"
+        aria-label="Slide 2"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="2"
+        aria-label="Slide 3"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="3"
+        aria-label="Slide 4"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="4"
+        aria-label="Slide 5"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="5"
+        aria-label="Slide 6"
+      ></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="1img/230314-SSAI_view-01-f.jpg"
+          class="d-block w-100"
+          alt="..."
+        />
+        <div class="carousel-caption d-none d-md-block bk">
+          <p>Some placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="1img/230314-SSAI_view-02-f.jpg"
+          class="d-block w-100"
+          alt="..."
+        />
+        <div class="carousel-caption d-none d-md-block bk">
+          <p>Some placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="1img/230314-SSAI_view-03-f.jpg"
+          class="d-block w-100"
+          alt="..."
+        />
+        <div class="carousel-caption d-none d-md-block bk">
+          <p>Some placeholder content for the third slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="1img/230314-SSAI_view-04-f.jpg"
+          class="d-block w-100"
+          alt="..."
+        />
+        <div class="carousel-caption d-none d-md-block bk">
+          <p>Some placeholder content for the 4th slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="1img/230314-SSAI_view-05-f.jpg"
+          class="d-block w-100"
+          alt="..."
+        />
+        <div class="carousel-caption d-none d-md-block bk">
+          <p>Some placeholder content for the 5th slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="1img/Aerial1.png" class="d-block w-100" alt="..." />
+        <div class="carousel-caption d-none d-md-block bk">
+          <p>Some placeholder content for the 6th slide.</p>
+        </div>
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselExampleCaptions"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carouselExampleCaptions"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+<!-- end carousel -->
 
-          <h3 class="rustyred">South 344th Street Alternative</h3>
-          <ul>
-            <li>
-              The South 344th Street Alternative is in Federal Way, between
-              South 336th Street and South 344th Street, and between I-5 and
-              18th Place South. The site footprint is approximately 65 acres.
-            </li>
-            <li>
-              This site would require 1.8 miles of connecting light rail track
-              from the Federal Way Link Extension that will be part of the
-              <a href="https://www.soundtransit.org/system-expansion/tacoma-dome-link-extension" target="_blank">
-                Tacoma Dome Link Extension</a>. The South 344th Street Alternative also includes a test track
-              to prepare new vehicles for service. The test track would run
-              parallel and on the east side of the connecting light rail
-              tracks.
-            </li>
-          </ul>
-
-          <h3 class="stwaveteal">Midway Landfill Alternative</h3>
-          <ul>
-            <li>
-              The Midway Landfill Alternative is in Kent, between South 246th
-              Street and South 252nd Street, and between I-5 and SR 99. The
-              site footprint is approximately 68 acres.
-            </li>
-            <li>
-              Due to its location along the Federal Way Link Extension line,
-              the Midway Landfill does not include connecting tracks. This
-              site would not include a test track due to varying grades.
-            </li>
-          </ul>
-          <div>
-            <p>&nbsp;</p>
-          </div>
         </div>
 
         <div class="col-md-5">
-          <div class="pt-5">
-            <!-- Modal - pt1 -->
-
-            <a role="button" class="btn p-2 bo" data-bs-toggle="modal" data-bs-target="#mapModal">
-              <img src="https://oohkenmoreconstruction.blob.core.windows.net/media/Default/OMF-South/en/OMFSouthOverviewMapEnglish.jpg"
-                alt="Map showing the three OMF South alternatives in Kent and Federal Way, with inset maps showing more detailed locations. The South 336th Street Alternative is indicated as the preferred alternative."
-                class="" />
-              <figcaption class="s2"> The three alternatives for OMF South being studied in the EIS. &nbsp;&nbsp;|
-                &nbsp;&nbsp;Click to enlarge</figcaption>
-            </a>
-
-            <!-- Modal - pt2 -->
-            <div class="">
-              <div class="modal fade" id="mapModal" tabindex="-1" aria-labelledby="mapModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <!-- <h3>Schedule</h3> -->
-
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <img src="https://oohkenmoreconstruction.blob.core.windows.net/media/Default/OMF-South/en/OMFSouthOverviewMapEnglish.jpg"
-                        alt="Map showing the three OMF South alternatives in Kent and Federal Way, with inset maps showing more detailed locations. The South 336th Street Alternative is indicated as the preferred alternative. " />
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn pbutton" data-bs-dismiss="modal">
-                        Close
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- end callout -->
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="improvements">
+    <div class="entry-header">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2>Other Improvements</h2>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <p class="leady me-3">
+            Interested in more details? Learn more about the other improvements we’re studying.          
+          </p>
+         <!-- Accordion-1 -->
+         <button class="accordion thr" aria-expanded="false" aria-controls="accordion">
+          Springbrook neighborhood connections        
+        </button>
+        <div class="panel">
+          <p>
+            An OMF is where Link light rail trains go for cleaning, storage
+            and maintenance, 24 hours a day, 365 days a year. Sound Transit
+            needs four strategically located OMF facilities. We need this new
+            OMF in the South Sound to receive, store and service a larger
+            train fleet to support future light rail extensions to Tacoma and
+            throughout the region. To build this new facility, we need
+            approximately 60-70 acres (for reference, one football field is
+            1.3 acres) near the
+            <a href="https://www.soundtransit.org/system-expansion/federal-way-link-extension"
+              target="_blank">Federal
+              Way Link Extension</a>.
+          </p>
+          <hr class="thr" />
+        </div>
+        <!-- --- -->
+         <!-- Accordion-2 -->
+         <button class="accordion thr" aria-expanded="false" aria-controls="accordion">
+          112th Street S.W. connections        
+        </button>
+        <div class="panel">
+          <p>
+            An OMF is where Link light rail trains go for cleaning, storage
+            and maintenance, 24 hours a day, 365 days a year. Sound Transit
+            needs four strategically located OMF facilities. We need this new
+            OMF in the South Sound to receive, store and service a larger
+            train fleet to support future light rail extensions to Tacoma and
+            throughout the region. To build this new facility, we need
+            approximately 60-70 acres (for reference, one football field is
+            1.3 acres) near the
+            <a href="https://www.soundtransit.org/system-expansion/federal-way-link-extension"
+              target="_blank">Federal
+              Way Link Extension</a>.
+          </p>
+          <hr class="thr" />
+        </div>
+        <!-- --- -->
+         <!-- Accordion-3 -->
+         <button class="accordion thr" aria-expanded="false" aria-controls="accordion">
+        Station accessibility and safety
+        </button>
+        <div class="panel">
+          <p>
+            An OMF is where Link light rail trains go for cleaning, storage
+            and maintenance, 24 hours a day, 365 days a year. Sound Transit
+            needs four strategically located OMF facilities. We need this new
+            OMF in the South Sound to receive, store and service a larger
+            train fleet to support future light rail extensions to Tacoma and
+            throughout the region. To build this new facility, we need
+            approximately 60-70 acres (for reference, one football field is
+            1.3 acres) near the
+            <a href="https://www.soundtransit.org/system-expansion/federal-way-link-extension"
+              target="_blank">Federal
+              Way Link Extension</a>.
+          </p>
+          <hr class="thr" />
+        </div>
+        <!-- --- -->
+         <!-- Accordion-4 -->
+         <button class="accordion thr" aria-expanded="false" aria-controls="accordion">
+        Station area improvements
+        </button>
+        <div class="panel">
+          <p>
+            An OMF is where Link light rail trains go for cleaning, storage
+            and maintenance, 24 hours a day, 365 days a year. Sound Transit
+            needs four strategically located OMF facilities. We need this new
+            OMF in the South Sound to receive, store and service a larger
+            train fleet to support future light rail extensions to Tacoma and
+            throughout the region. To build this new facility, we need
+            approximately 60-70 acres (for reference, one football field is
+            1.3 acres) near the
+            <a href="https://www.soundtransit.org/system-expansion/federal-way-link-extension"
+              target="_blank">Federal
+              Way Link Extension</a>.
+          </p>
+          <hr class="thr" />
+        </div>
+        <!-- --- -->
+         <!-- Accordion-5 -->
+         <button class="accordion thr" aria-expanded="false" aria-controls="accordion">
+        Route 206 bus stop at the station
+        </button>
+        <div class="panel">
+          <p>
+            An OMF is where Link light rail trains go for cleaning, storage
+            and maintenance, 24 hours a day, 365 days a year. Sound Transit
+            needs four strategically located OMF facilities. We need this new
+            OMF in the South Sound to receive, store and service a larger
+            train fleet to support future light rail extensions to Tacoma and
+            throughout the region. To build this new facility, we need
+            approximately 60-70 acres (for reference, one football field is
+            1.3 acres) near the
+            <a href="https://www.soundtransit.org/system-expansion/federal-way-link-extension"
+              target="_blank">Federal
+              Way Link Extension</a>.
+          </p>
+          <hr class="thr" />
+        </div>
+        <!-- --- -->
+         <!-- Accordion-6 -->
+         <button class="accordion thr" aria-expanded="false" aria-controls="accordion">
+        Kendrick Street S.W. connections
+        </button>
+        <div class="panel">
+          <p>
+            An OMF is where Link light rail trains go for cleaning, storage
+            and maintenance, 24 hours a day, 365 days a year. Sound Transit
+            needs four strategically located OMF facilities. We need this new
+            OMF in the South Sound to receive, store and service a larger
+            train fleet to support future light rail extensions to Tacoma and
+            throughout the region. To build this new facility, we need
+            approximately 60-70 acres (for reference, one football field is
+            1.3 acres) near the
+            <a href="https://www.soundtransit.org/system-expansion/federal-way-link-extension"
+              target="_blank">Federal
+              Way Link Extension</a>.
+          </p>
+          <hr class="thr" />
+        </div>
+        <!-- --- -->
+         <!-- Accordion-7 -->
+         <button class="accordion thr" aria-expanded="false" aria-controls="accordion">
+        Clover Creek Drive S.W. connections
+        </button>
+        <div class="panel">
+          <p>
+            An OMF is where Link light rail trains go for cleaning, storage
+            and maintenance, 24 hours a day, 365 days a year. Sound Transit
+            needs four strategically located OMF facilities. We need this new
+            OMF in the South Sound to receive, store and service a larger
+            train fleet to support future light rail extensions to Tacoma and
+            throughout the region. To build this new facility, we need
+            approximately 60-70 acres (for reference, one football field is
+            1.3 acres) near the
+            <a href="https://www.soundtransit.org/system-expansion/federal-way-link-extension"
+              target="_blank">Federal
+              Way Link Extension</a>.
+          </p>
+          <hr class="thr" />
+        </div>
+        <!-- --- -->
+         <!-- Accordion-8 -->
+         <button class="accordion thr" aria-expanded="false" aria-controls="accordion">
+          Clover Park High School connection
+        </button>
+        <div class="panel">
+          <p>
+            An OMF is where Link light rail trains go for cleaning, storage
+            and maintenance, 24 hours a day, 365 days a year. Sound Transit
+            needs four strategically located OMF facilities. We need this new
+            OMF in the South Sound to receive, store and service a larger
+            train fleet to support future light rail extensions to Tacoma and
+            throughout the region. To build this new facility, we need
+            approximately 60-70 acres (for reference, one football field is
+            1.3 acres) near the
+            <a href="https://www.soundtransit.org/system-expansion/federal-way-link-extension"
+              target="_blank">Federal
+              Way Link Extension</a>.
+          </p>
+          <hr class="thr" />
+        </div>
+        <!-- --- -->
+         <!-- Accordion-9 -->
+         <button class="accordion thr" aria-expanded="false" aria-controls="accordion">
+        Davisson Road S.W. connections
+        </button>
+        <div class="panel">
+          <p>
+            An OMF is where Link light rail trains go for cleaning, storage
+            and maintenance, 24 hours a day, 365 days a year. Sound Transit
+            needs four strategically located OMF facilities. We need this new
+            OMF in the South Sound to receive, store and service a larger
+            train fleet to support future light rail extensions to Tacoma and
+            throughout the region. To build this new facility, we need
+            approximately 60-70 acres (for reference, one football field is
+            1.3 acres) near the
+            <a href="https://www.soundtransit.org/system-expansion/federal-way-link-extension"
+              target="_blank">Federal
+              Way Link Extension</a>.
+          </p>
+          <hr class="thr" />
+        </div>
+        <!-- --- -->
+         <!-- Accordion-10 -->
+         <button class="accordion thr" aria-expanded="false" aria-controls="accordion">
+        Surface parking
+        </button>
+        <div class="panel">
+          <p>
+            o	As part of the voter approved Sound Transit 2 Plan in 2008, 
+            Sound Transit is required to explore adding surface parking 
+            lots near transit stations to help improve access to the station by people in cars. 
+            We looked at whether adding surface parking would benefit 
+            Sounder commuters at Lakewood Station. What we found is that the 
+            existing parking at and near the station is not heavily used, 
+            with only [x%] of parking spaces being taken up during peak travel times. 
+            While we understand the importance of making sure people that drive cars 
+            can also access Sounder, the nearby parking areas that already serve 
+            Lakewood Station commuters are expected to meet Lakewood Station’s 
+            forecasted ridership demands going forward.
+          </p>
+          <hr class="thr" />
+        </div>
+        <!-- --- -->
+        </div>
+
+        <div class="col-md-5">
+        
         </div>
       </div>
     </div>
@@ -441,16 +799,14 @@
     <div class="8-4-cols">
       <div class="container">
         <div class="row">
-          <div class="col-md-7">
-            <h3>What comes next for the OMF South?</h3>
+          <div class="col-md-7 mt-4">
             <p>
-              We will evaluate the South 336th Street Alternative, along with
-              other alternatives, in the NEPA Draft / SEPA Supplemental
-              Draft EIS set to be published later this year. The Final EIS,
-              which will include responses to substantive Draft EIS comments
-              and evaluation of the preferred and other alternatives, is
-              scheduled to be issued in mid-2024. After that, the Board will
-              select a project to be built.
+              The project team continues to finalize the environmental 
+              review and refine designs for the proposed changes 
+              throughout the project area. Once this effort is completed, 
+              the Sound Transit Board will select the improvements to be built. 
+              From there, the City of Lakewood will finalize the order of 
+              construction for the proposed changes with groundbreaking set to begin in 2025.
             </p>
             <p>&nbsp;</p>
             <article class="timelinepage">
@@ -494,62 +850,45 @@
             </article>
             <p>*Subject to change.</p>
 
-            <!-- Accordion -->
-            <button class="accordion thr" aria-expanded="false" aria-controls="accordion">
-              Questions about your property?
-            </button>
-            <div class="panel">
-              <p>
-                Have you received a property owner letter or phone call from
-                us, or think the project may affect your property? A
-                notification of potential impact does not mean a decision has
-                been made to acquire your property. It does mean there’s a
-                possibility we would need to acquire your property in the
-                future. Final decisions on affected properties and
-                acquisitions won’t occur until after the Final EIS and Sound
-                Transit Board decision. If we find that your property is
-                needed for OMF South, Sound Transit will start official
-                conversations around acquisitions and relocation at that time
-                and after an independent appraisal process.
-              </p>
-              <p>
-                Our project outreach team is available to help with questions
-                every step of the way. To schedule a property owner briefing
-                with members of the project team you can:
-              </p>
-              <ul>
-                <li>
-                  Visit
-                  <a href="https://omfsouthpropertyownerbriefings.as.me/schedule.php">
-                    omfsouthpropertyownerbriefings.as.me</a>
-                </li>
-                <li>Leave a voicemail at 206-398-5453</li>
-                <li>
-                  Email us at
-                  <a href="mailto:OMFSouth@soundtransit.org">OMFSouth@soundtransit.org</a>
-                </li>
-              </ul>
-              <hr class="thr" />
-            </div>
           </div>
 
           <div class="col-md-5">
             <!-- callout -->
-            <h3 class="gb">The benefits of OMF South</h3>
+            <h3 class="gb">Stay engaged</h3>
             <div class="callout">
-              <ul>
-                <li>
-                  Creates high-skilled, living-wage jobs for more than 470
-                  people in South King County. At our existing OMF, the
-                  average employee wage is more than $40 per hour, or
-                  $80,000/year.
-                </li>
-                <li>
-                  Ensures thousands of passengers can rely on clean,
-                  well-maintained trains.
-                </li>
-                <li>Supports the regional Link light rail system.</li>
-              </ul>
+              <!-- <p>
+                We're always here to help. You can contact the project team at
+                <a href="mailto:omfsouth@soundtransit.org">omfsouth@soundtransit.org</a>
+                or call 206-398-5453.
+              </p> -->
+              <p>
+                Get upcoming project news and public involvement opportunities by signing up for our project email updates below.
+              </p>
+              <!-- <h3>
+                  Sign up for project updates
+                </h3> -->
+              <label for="subscribe-target">Sign up for project updates</label>
+              <form action="https://public.govdelivery.com/accounts/WASOUND/subscribers/qualify"
+                id="system-expansion-subscription-form" method="get" target="_blank" novalidate="novalidate">
+                <input type="hidden" name="qsp" id="qsp" value="WASOUND_24" />
+                <input type="hidden" value="1" name="country_code" id="country_code" />
+                <input type="hidden" id="subscription_type" name="subscription_type" value="email" />
+                <div class="">
+                  <div class="footer__service-alerts-form">
+                    <span class="form__label sr-only" id="subscribe-form-input-placeholder">Enter your email
+                      address</span>
+                    <input class="form__control" id="subscribe-target" name="email" type="text"
+                      placeholder="Enter your email address" aria-describedby="subscribe-form-input-placeholder" />
+                  </div>
+                </div>
+                <div class="">
+                  <div class="footer__service-alerts-submit">
+                    <button type="submit" class="btn pbutton">
+                      Sign up
+                    </button>
+                  </div>
+                </div>
+              </form>
             </div>
             <!-- end callout -->
           </div>

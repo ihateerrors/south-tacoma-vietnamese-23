@@ -1,0 +1,8 @@
+#improvements .thr:not(:first-of-type) {
+    border-top: none;
+}
+
+#improvements .thr {
+    margin: 0px;
+
+}
