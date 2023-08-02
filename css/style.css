@@ -175,8 +175,9 @@ h3 {
 }
 
 .accordion.active:after {
-  content: "\2796";
-  /* Unicode character for "minus" sign (-) */
+  font-size: 38px;
+  content: "-";
+
 }
 
 p {

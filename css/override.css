@@ -18,3 +18,25 @@
 .img-card-heading {
     margin-top: 1rem;
 }
+
+.sota-logo2 {
+    height: 111px;
+}
+
+.urgent-banner {
+    background-color: #FDCD23;
+    padding: 2rem 0;
+}
+.urgent-banner a {
+    text-decoration: none;
+    color: inherit;
+
+}
+.urgent-banner a:hover {
+    text-decoration: underline;
+
+}
+
+.urgent-text {
+    font-size: 20px;
+}
