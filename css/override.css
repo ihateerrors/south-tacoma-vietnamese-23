@@ -1,3 +1,10 @@
+
+
+
+li {
+    font-size: 1.955rem;
+}
+
 #improvements .thr:not(:first-of-type) {
     border-top: none;
 }
@@ -39,4 +46,18 @@
 
 .urgent-text {
     font-size: 20px;
+}
+
+.cost-list {
+    list-style: none;
+    text-align: center;
+    padding-right: 2rem;
+}
+
+.cost-list li {
+    font-size: 24px;
+}
+
+.dollar-sign {
+    font-weight: 500;
 }
