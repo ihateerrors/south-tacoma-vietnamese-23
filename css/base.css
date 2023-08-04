@@ -140,7 +140,7 @@ button {
     width: auto;
   }
 }
-input,
+.callout input,
 select,
 textarea {
   -webkit-appearance: none;
@@ -160,6 +160,7 @@ textarea {
   padding: 1rem 0.7em;
   width: 100%;
 }
+
 label {
   display: block;
   margin-top: 3rem;

@@ -7,11 +7,11 @@ li {
     font-size: 1.955rem;
 }
 
-#improvements .thr:not(:first-of-type) {
+.accordion-list .thr:not(:first-of-type) {
     border-top: none;
 }
 
-#improvements .thr {
+.accordion-list .thr {
     margin: 0px;
 
 }
@@ -83,4 +83,15 @@ li {
     margin: 0; 
     font-size: inherit;
 
+}
+
+figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.sg-survey li input {
+    top: 16px !important;
 }
