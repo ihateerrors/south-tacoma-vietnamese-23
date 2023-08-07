@@ -95,3 +95,7 @@ figure img {
 .sg-survey li input {
     top: 16px !important;
 }
+
+.acc-icon {
+    width: 35px;
+}
