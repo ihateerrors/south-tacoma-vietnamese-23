@@ -205,10 +205,6 @@ p {
   background-color: #d9d9d9;
 }
 
-.pbutton {
-  color: #ffffff !important;
-  background: #d6078e !important;
-}
 
 .blbutton {
   color: #ffffff !important;
@@ -223,11 +219,6 @@ p {
   font-family: "Nunito Sans", Arial, sans-serif !important;
 }
 
-.pbutton a {
-  color: #ffffff !important;
-  text-decoration: none;
-  border-color: #ffffff;
-}
 
 .blbutton a {
   color: #ffffff !important;
