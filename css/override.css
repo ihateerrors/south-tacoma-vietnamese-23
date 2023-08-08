@@ -1,101 +1,140 @@
-
 :root {
-    --wave-blue: #2b376e;
+  --wave-blue: #2b376e;
+  --wave-teal: #2A7997;
+  --railway-gay: #5a5a5a;
+  --highway-gray: #787878;
+  --service-gray: #aaaaaa;
+  --roadway-gray: #dcdcdc;
+  --land-gray: #f0f0f0;
 }
 
 li {
-    font-size: 1.955rem;
+  font-size: 1.955rem;
 }
 
 .accordion-list .thr:not(:first-of-type) {
-    border-top: none;
+  border-top: none;
 }
 
 .accordion-list .thr {
-    margin: 0px;
-
+  margin: 0px;
 }
 
 .img-container {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 .img-fluid-custom {
-    height: 100%;
-    object-fit: cover;
+  height: 100%;
+  object-fit: cover;
 }
 .img-card-heading {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .sota-logo2 {
-    height: 111px;
+  height: 111px;
 }
 
 .urgent-banner {
-    background-color: #FDCD23;
-    padding: 2rem 0;
+  background-color: #fdcd23;
+  padding: 2rem 0;
 }
 .urgent-banner a {
-    text-decoration: none;
-    color: inherit;
-
+  color: inherit;
 }
-.urgent-banner a:hover {
-    text-decoration: underline;
-
+.urgent-banner:hover a {
+  text-decoration: none;
 }
 
 .urgent-text {
-    font-size: 20px;
+  font-size: 20px;
 }
 
+.urgent-text::after {
+  content: " >>";
+}
+
+/* @keyframes banner-hover {
+    from {
+        padding: 2rem;
+    }
+    to {
+        padding: 3rem;
+    }
+}
+.urgent-banner:hover {
+    animation: banner-hover 300ms linear forwards;
+    
+} */
+
 .cost-list {
-    list-style: none;
-    text-align: center;
-    padding-right: 2rem;
+  list-style: none;
+  text-align: center;
+  padding-right: 2rem;
 }
 
 .cost-list li {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .dollar-sign {
-    font-weight: 500;
+  font-weight: 500;
 }
-  /* Custom Tooltip styles */
-  .tooltip {
-    max-width: 400px !important;/* Adjust the maximum width of the tooltip */
-  }
+/* Custom Tooltip styles */
+.tooltip {
+  max-width: 400px !important; /* Adjust the maximum width of the tooltip */
+}
 
-  
 .tooltip-inner {
-    font-size: 1.7rem;
-    background-color: var(--wave-blue);
-    max-width: 100% !important;
-
+  font-size: 1.7rem;
+  background-color: var(--wave-blue);
+  max-width: 100% !important;
 }
 .tooltip-anchor {
-    font-weight: 600;
-    border-bottom: 2px dashed gray;
-    color: black;
-    padding: 0;
-    margin: 0; 
-    font-size: inherit;
-
+  font-weight: 600;
+  border-bottom: 2px dashed gray;
+  color: black;
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
 }
 
 figure img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .sg-survey li input {
-    top: 16px !important;
+  top: 16px !important;
 }
 
 .acc-icon {
-    width: 35px;
+  width: 35px;
+}
+
+.footer-banner {
+  background-color: var(--wave-teal);
+  color: #fff;
+}
+.footer-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 0;
+}
+#footer {
+  margin-top: 0;
+}
+
+label[for="subscribe-target"] {
+  padding-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+    label[for="subscribe-target"] {
+        padding-bottom: 0rem;
+      }
 }
