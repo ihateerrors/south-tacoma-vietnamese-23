@@ -92,9 +92,6 @@ li {
   font-size: 24px;
 }
 
-.cost-gb {
-    margin: 0;
-}
 
 .dollar-sign {
   font-weight: 500;
@@ -197,6 +194,14 @@ figure img {
     overflow: hidden;
   }
 button.btn-back {
+    color: var(--wave-blue);
+    border: 3px solid var(--wave-blue);
+
+    padding: 8px 10px;
+    font-size: 24px;
+}
+
+#btn-back {
     color: var(--wave-blue);
     border: 3px solid var(--wave-blue);
 

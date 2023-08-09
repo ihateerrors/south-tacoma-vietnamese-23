@@ -88,9 +88,7 @@ button {
   color: #ffffff;
   background-color: #2a7997;
   padding: 10px 0px 10px 10px;
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .graybox {
