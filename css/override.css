@@ -1,6 +1,7 @@
 :root {
   --wave-blue: #2b376e;
   --wave-teal: #2A7997;
+  --wave-green: #008281;
   --railway-gay: #5a5a5a;
   --highway-gray: #787878;
   --service-gray: #aaaaaa;
@@ -38,6 +39,11 @@ li {
 }
 .img-card-heading {
   margin-top: 1rem;
+}
+@media (min-width: 1200px) {
+    .img-card-heading {
+        font-size: 2em;
+    }
 }
 
 .sota-logo2 {
@@ -157,4 +163,27 @@ figure img {
     .footer-form {
         flex-direction: column;
     }
+    #story-2 {
+        flex-direction: column-reverse;
+    }
+  }
+
+ .story-card * {
+    max-height: 648px !important;
+    color: #fff !important;
+  }
+  .story-card .img-container {
+    margin: 0;
+  }
+  #story-1 .text-box {
+    background-color: var(--wave-teal);
+  }
+  #story-2 .text-box {
+    background-color: var(--wave-blue);
+  }
+  #story-3 .text-box {
+    background-color: var(--wave-green);
+  }
+  #highlights {
+    overflow: hidden;
   }
