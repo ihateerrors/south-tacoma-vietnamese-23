@@ -111,8 +111,11 @@
       href="css/override.css"
       media="all"
     />
-    <!-- <script src="js/vendor/modernizr-2.8.3.min.js"></script> -->
-    <script>
+    <link
+    rel="stylesheet"
+    href="https://kit.fontawesome.com/56475f5c73.css"
+    crossorigin="anonymous"
+  />    <script>
       (function (i, s, o, g, r, a, m) {
         i["GoogleAnalyticsObject"] = r;
         (i[r] =
@@ -141,9 +144,9 @@
   <body data-spy="scroll" data-target="#navbarSupportedContent" data-offset="0">
     <header id="mainheader">
       <div class="topbar">
-        <div class="container">
+        <div class="container-xxl">
           <div class="row">
-            <div class="col-md-7 col-lg-8">
+            <div class="px-4 col-lg-8">
               <img
                 class="stlogo"
                 src="img/digital-blue-ST-logo_blu.png"
@@ -151,12 +154,12 @@
               />
               <span class="timespan"> </span>
             </div>
-            <div class="col-md-5 col-lg-4">
+            <div class="px-4 col-lg-4">
               <div id="google_translate_element"></div>
             </div>
           </div>
           <div class="row" style="margin-top: -0.5%">
-            <div class="col">
+            <div class="px-4 col">
               <a href="https://omfsouth-spanish.participate.online/">Español</a>
               |
               <a href="https://omfsouth-korean.participate.online/">
@@ -175,86 +178,49 @@
           </div>
         </div>
       </div>
-      <div class="container xxx">
-        <div class="row">
-          <div class="col-12 hero">
-            <div class="d-flex align-items-center">
-              <img
-                class="sota-logo2"
-                src="https://wppo.blob.core.windows.net/st-kingstreetstation/2022/03/2022_0328_ST_KSS_OOH_header_v2 copy2.svg"
-                style="float: left; padding: 0 5px"
-                alt="Operations and Maintenance Facility South logo"
-              />
-              <h1>47th Avenue SW Bridge</h1>
-            </div>
-          </div>
-        </div>
-      </div>
+
     </header>
 
-    <div class="topdiv sticky-top">
-      <progress id="progressbar" value="0" max="100"></progress>
-      <nav class="navbar navbar-expand-sm bg-transparent py-0 sticky-top">
-        <div class="container">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <nav
-            class="collapse navbar-collapse top_nav scrollspy_row"
-            id="navbarSupportedContent"
-          >
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="/#welcome">Welcome</a>
-              </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="/#highlights">Project highlights</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="/#coloring">Coloring activity</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="/#improvements">More improvements</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="/#next">Next steps</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </nav>
-    </div>
 
     <!-- Left-column -->
 
     <div id="overview">
-      <div class="entry-header nm" id="sec-title">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <header>
-                <h2>Overview</h2>
-              </header>
-            </div>
+      <div class="container-xxl">
+        <div class="row">
+          <div class="px-4 col-lg-8 pb-5">
+            <div class="mt-5">
+              <button class="btn-back" onclick="history.back()">
+                <i class="fa-solid fa-arrow-left"></i> Back
+            </button>            
+          </div>
+            <h1 class="mt-3">
+              47th Avenue SW Bridge
+            </h1>
           </div>
         </div>
       </div>
+      <div class="container-xxl">
+        <row>
+          <div class="px-4 col">
+              <figure class="bo">
+                <img src="img/47st-bridge.png" alt="" />
+                <figcaption>
+                    We’re proposing making the sidewalk on the west side of the
+                    bridge between 5 to 8 feet wide. (It is currently just 2 to 3
+                    feet wide.) This would make it easier to walk to destinations
+                    north of I-5, such as Lakewood Station, particularly for
+                    people using strollers or wheelchairs.
+                </figcaption>
+              </figure>
+             
+          </div>
+        </row>
+      </div>
 
-      <div class="container">
+      <div class="container-xxl">
         <div class="row">
-          <div class="col-md-7 col-lg-8 pe-5 pt-5">
+          <div class="px-4 col-lg-8 pt-5">
             <div>
               <h4>A better pedestrian connection from Springbrook</h4>
               <p>
@@ -277,10 +243,9 @@
               <!-- <h4>Existing Condition of the 47th Street Bridge</h4> -->
               <figure>
                 <a
-                  role="button"
+                  href="img/lakewood/47th_Existing Condition 7.26.23.png"
                   class="btn p-2 bo"
-                  data-bs-toggle="modal"
-                  data-bs-target="#bridge47Graphic1"
+                  target="_blank"
                 >
                   <img
                     src="img/lakewood/47th_Existing Condition 7.26.23.png"
@@ -294,79 +259,43 @@
                   </figcaption>
                 </a>
               </figure>
-
-              <!-- Lightbox Modal - pt2 -->
-              <div
-                class="modal fade"
-                id="bridge47Graphic1"
-                tabindex="-1"
-                aria-labelledby="bridge47Graphic1Label"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog modal-lg">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <!-- <h3>Schedule</h3> -->
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                    </div>
-                    <div class="modal-body">
-                      <img
-                      src="img/lakewood/47th_Existing Condition 7.26.23.png"
-                      alt="A cross-section of the existing bridge, which depicts 2-3 foot sidewalks on each side of the bridge.  "
-                      />
-                    </div>
-                    <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn pbutton"
-                        data-bs-dismiss="modal"
-                      >
-                        Close
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-            <!-- end lightbox -->
           </div>
 
           <!-- Right-column -->
-          <div class="col-md-5 col-lg-4">
-            <div class="mt-5 pt-5">
-              <figure class="bo">
-                <img src="img/47st-bridge.png" alt="" />
-                <figcaption>
-                  We’re proposing making the sidewalk on the west side of the
-                  bridge between 5 to 8 feet wide. (It is currently just 2 to 3
-                  feet wide.) This would make it easier to walk to destinations
-                  north of I-5, such as Lakewood Station, particularly for
-                  people using strollers or wheelchairs.
-                </figcaption>
-              </figure>
-             
-            </div>
+          <div class="px-4 col-lg-4">
+            <div class="pt-5  mt-lg-5">
+              <!-- callout -->
+ 
+               <h3 class="gb cost-gb">Initial findings overview</h3>
+               <div class="callout">
+                 <p><b>Preliminary cost estimate*:</b> $2M - $4M</p>
+                 <p>
+                   *Preliminary estimates are for construction costs based on a
+                   very early stage of design and are subject to change.
+                 </p>
+                 <p>
+                   <b>Environmental findings:</b> No significant issues have been
+                   identified.
+                 </p>
+               </div>
+               <!-- -- callout end --  -->
+           </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container-xxl">
       <div class="row">
-        <div class="col-md-7 col-lg-8 pe-5">
+        <div class="px-4 col-lg-8">
           <!-- Start lightbox -->
-          <div class="pt-5">
+          <div class="py-5">
             <!-- <h4>Proposed Condition of the 47th Street Bridge</h4> -->
             <figure>
               <a
-                role="button"
-                class="btn p-2 bo"
-                data-bs-toggle="modal"
-                data-bs-target="#bridge47Graphic2"
+              href="img/lakewood/47th_Proposed Condition 7.26.23.png"
+              class="btn p-2 bo"
+                target="_blank"
               >
                 <img
                   src="img/lakewood/47th_Proposed Condition 7.26.23.png"
@@ -387,45 +316,7 @@
               </a>
             </figure>
 
-            <!-- Lightbox Modal - pt2 -->
-            <div
-              class="modal fade"
-              id="#bridge47Graphic2"
-              tabindex="-1"
-              aria-labelledby="#bridge47Graphic2Label"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <!-- <h3>Schedule</h3> -->
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    <img
-                      src="img/lakewood/47th_Proposed Condition 7.26.23.png"
-                      alt="We’re proposing making the sidewalk on the west side of the bridge between 5 to 8 feet wide. (It is currently just 2 to 3 feet wide.) This would make it easier to walk to destinations north of I-5, such as Lakewood Station, particularly for people using strollers or wheelchairs.  "
-                    />
-                  </div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn pbutton"
-                      data-bs-dismiss="modal"
-                    >
-                      Close
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
-          <!-- end lightbox -->
           <p>
             We are also proposing new sidewalks, sharrows, and
             <button
@@ -456,32 +347,16 @@
           <p>All improvements are expected to be completed by 2030.</p>
         </div>
         <!-- Right-column -->
-        <div class="col-md-5 col-lg-4">
-          <div class="p-4 pt-0">
-             <!-- callout -->
-
-              <h3 class="gb cost-gb">Initial findings overview</h3>
-              <div class="callout">
-                <p><b>Preliminary cost estimate*:</b> $2M - $4M</p>
-                <p>
-                  *Preliminary estimates are for construction costs based on a
-                  very early stage of design and are subject to change.
-                </p>
-                <p>
-                  <b>Environmental findings:</b> No significant issues have been
-                  identified.
-                </p>
-              </div>
-              <!-- -- callout end --  -->
-          </div>
+        <div class="px-4 col-lg-4">
+          
         </div>
       </div>
     </div>
 
     <div id="footer">
-      <div class="container">
+      <div class="container-xxl">
         <div class="row">
-          <div class="col-md-6">
+          <div class="px-4 col-md-6">
             <h2 id="contact-us">Questions? Contact us:</h2>
             <p>
               <strong>Melanie Mayock</strong> <br /><strong>Phone:</strong>
@@ -526,7 +401,7 @@
               <a href="tel:2063985268">206-398-5268</a>
             </p>
           </div>
-          <div class="col-md-6">
+          <div class="px-4 col-md-6">
             <div>
               <p>
                 <img src="/img/st-white.png" alt="Sound Transit" />

@@ -563,4 +563,6 @@ i.fa.fa-check {
 figcaption {
   text-align: left;
   padding: 10px;
+  font-size: 1.6rem;
+  font-style: italic;
 }

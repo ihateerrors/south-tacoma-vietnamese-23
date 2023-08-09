@@ -136,11 +136,15 @@ figure img {
   background-color: var(--wave-teal);
   color: #fff;
 }
+.footer-banner strong {
+    font-size: 2.4rem;
+}
 .footer-form {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 0rem;
   padding-top: 0;
 }
 #footer {
@@ -151,7 +155,8 @@ figure img {
     color: var(--line-pink);
     background-color: #fff;
     border: 2px solid var(--line-pink);
-    margin-bottom: 1rem;
+    margin: 0 !important;
+
 }
 .pbutton:hover {
     color: #ffffff;
