@@ -92,6 +92,10 @@ li {
   font-size: 24px;
 }
 
+.cost-gb {
+    margin: 0;
+}
+
 .dollar-sign {
   font-weight: 500;
 }
@@ -169,7 +173,7 @@ figure img {
   }
 
  .story-card * {
-    max-height: 648px !important;
+    max-height: 600px !important;
     color: #fff !important;
   }
   .story-card .img-container {
@@ -187,3 +191,10 @@ figure img {
   #highlights {
     overflow: hidden;
   }
+.btn-back {
+    color: var(--wave-blue);
+    border: 3px solid var(--wave-blue);
+
+    padding: 8px 10px;
+    font-size: 24px;
+}
