@@ -196,7 +196,7 @@ figure img {
   #highlights {
     overflow: hidden;
   }
-.btn-back {
+button.btn-back {
     color: var(--wave-blue);
     border: 3px solid var(--wave-blue);
 
