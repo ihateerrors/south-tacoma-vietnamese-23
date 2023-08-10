@@ -201,7 +201,7 @@ button.btn-back {
     font-size: 24px;
 }
 
-#btn-back {
+.btn-back {
     color: var(--wave-blue);
     border: 3px solid var(--wave-blue);
 
