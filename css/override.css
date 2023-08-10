@@ -10,9 +10,7 @@
   --line-pink: #d6078e;
 
 }
-a,
-button,
-input,
+
 .pbutton {
     border-radius: 5px;
 }
@@ -146,6 +144,10 @@ figure img {
 }
 #footer {
   margin-top: 0;
+  font-size: 1.6rem;
+}
+.footer-header {
+    font-size: 2rem;
 }
 
 .pbutton {
@@ -204,7 +206,7 @@ button.btn-back {
 .btn-back {
     color: var(--wave-blue);
     border: 3px solid var(--wave-blue);
-
+    border-radius: 5px;
     padding: 8px 10px;
     font-size: 24px;
 }
