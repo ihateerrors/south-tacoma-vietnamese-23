@@ -2,7 +2,7 @@
   --wave-blue: #2b376e;
   --wave-teal: #2a7997;
   --wave-green: #008281;
-  --railway-gay: #5a5a5a;
+  --railway-ray: #5a5a5a;
   --highway-gray: #787878;
   --service-gray: #aaaaaa;
   --roadway-gray: #dcdcdc;
@@ -10,9 +10,6 @@
   --line-pink: #d6078e;
 }
 
-.pbutton {
-  border-radius: 5px;
-}
 
 li {
   font-size: 1.955rem;
@@ -66,18 +63,7 @@ li {
   content: " >>";
 }
 
-/* @keyframes banner-hover {
-    from {
-        padding: 2rem;
-    }
-    to {
-        padding: 3rem;
-    }
-}
-.urgent-banner:hover {
-    animation: banner-hover 300ms linear forwards;
-    
-} */
+
 
 .cost-list {
   list-style: none;
@@ -116,6 +102,17 @@ figure img {
   height: 100%;
   object-fit: cover;
 }
+figcaption.s2 {
+  text-align: left;
+  padding: 10px;
+  font-size: 1.6rem;
+  font-style: italic;
+  color: var(--railway-gray);
+}
+figcaption.s2:visited {
+  color: var(--highway-gray)
+}
+
 
 .sg-survey li input {
   top: 16px !important;
@@ -142,12 +139,12 @@ figure img {
   padding-top: 0;
 }
 #footer {
-  margin-top: 0;
   font-size: 1.6rem;
 }
 .footer-header {
   font-size: 2rem;
 }
+a.pbutton,
 #sg_SubmitButton,
 .pbutton {
   color: var(--line-pink);
@@ -155,6 +152,8 @@ figure img {
   border: 2px solid var(--line-pink);
   font-weight: 600;
   font-size: 1.8rem;
+  border-radius: 5px;
+  padding: .8rem 1.6rem;
 }
 .pbutton {
   margin: 0 !important;
@@ -169,6 +168,9 @@ figure img {
   color: #ffffff;
   text-decoration: none;
   border-color: #ffffff;
+}
+#sg_SubmitButton {
+  margin-right: 18px !important;
 }
 
 @media (max-width: 768px) {
@@ -199,14 +201,6 @@ figure img {
 #highlights {
   overflow: hidden;
 }
-button.btn-back {
-  color: var(--wave-blue);
-  border: 3px solid var(--wave-blue);
-
-  padding: 8px 10px;
-  font-size: 24px;
-}
-
 .btn-back {
   color: var(--wave-blue);
   border: 3px solid var(--wave-blue);
