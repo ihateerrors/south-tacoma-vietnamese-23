@@ -1,6 +1,6 @@
 :root {
   --wave-blue: #2b376e;
-  --wave-teal: #2A7997;
+  --wave-teal: #2a7997;
   --wave-green: #008281;
   --railway-gay: #5a5a5a;
   --highway-gray: #787878;
@@ -8,11 +8,10 @@
   --roadway-gray: #dcdcdc;
   --land-gray: #f0f0f0;
   --line-pink: #d6078e;
-
 }
 
 .pbutton {
-    border-radius: 5px;
+  border-radius: 5px;
 }
 
 li {
@@ -39,9 +38,9 @@ li {
   margin-top: 1rem;
 }
 @media (min-width: 1200px) {
-    .img-card-heading {
-        font-size: 2em;
-    }
+  .img-card-heading {
+    font-size: 2em;
+  }
 }
 
 .sota-logo2 {
@@ -90,7 +89,6 @@ li {
   font-size: 24px;
 }
 
-
 .dollar-sign {
   font-weight: 500;
 }
@@ -125,6 +123,7 @@ figure img {
 
 .acc-icon {
   width: 35px;
+  color: var(--wave-blue);
 }
 
 .footer-banner {
@@ -132,7 +131,7 @@ figure img {
   color: #fff;
 }
 .footer-banner strong {
-    font-size: 2.4rem;
+  font-size: 2.4rem;
 }
 .footer-form {
   display: flex;
@@ -147,66 +146,77 @@ figure img {
   font-size: 1.6rem;
 }
 .footer-header {
-    font-size: 2rem;
+  font-size: 2rem;
 }
-
+#sg_SubmitButton,
 .pbutton {
-    color: var(--line-pink);
-    background-color: #fff;
-    border: 2px solid var(--line-pink);
-    margin: 0 !important;
+  color: var(--line-pink);
+  background-color: #fff;
+  border: 2px solid var(--line-pink);
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+.pbutton {
+  margin: 0 !important;
 
 }
+#sg_SubmitButton:hover,
 .pbutton:hover {
-    color: #ffffff;
-    background: #d6078e;
-  }
-  .pbutton a {
-    color: #ffffff;
-    text-decoration: none;
-    border-color: #ffffff;
-  }
-  
-  @media (max-width: 768px) {
-    .footer-form {
-        flex-direction: column;
-    }
-    #story-2 {
-        flex-direction: column-reverse;
-    }
-  }
+  color: #ffffff;
+  background: #d6078e;
+}
+.pbutton a {
+  color: #ffffff;
+  text-decoration: none;
+  border-color: #ffffff;
+}
 
- .story-card * {
-    max-height: 600px !important;
-    color: #fff !important;
+@media (max-width: 768px) {
+  .footer-form {
+    flex-direction: column;
   }
-  .story-card .img-container {
-    margin: 0;
+  #story-2 {
+    flex-direction: column-reverse;
   }
-  #story-1 .text-box {
-    background-color: var(--wave-teal);
-  }
-  #story-2 .text-box {
-    background-color: var(--wave-blue);
-  }
-  #story-3 .text-box {
-    background-color: var(--wave-green);
-  }
-  #highlights {
-    overflow: hidden;
-  }
+}
+
+.story-card * {
+  max-height: 600px !important;
+  color: #fff !important;
+}
+.story-card .img-container {
+  margin: 0;
+}
+#story-1 .text-box {
+  background-color: var(--wave-teal);
+}
+#story-2 .text-box {
+  background-color: var(--wave-blue);
+}
+#story-3 .text-box {
+  background-color: var(--wave-green);
+}
+#highlights {
+  overflow: hidden;
+}
 button.btn-back {
-    color: var(--wave-blue);
-    border: 3px solid var(--wave-blue);
+  color: var(--wave-blue);
+  border: 3px solid var(--wave-blue);
 
-    padding: 8px 10px;
-    font-size: 24px;
+  padding: 8px 10px;
+  font-size: 24px;
 }
 
 .btn-back {
-    color: var(--wave-blue);
-    border: 3px solid var(--wave-blue);
-    border-radius: 5px;
-    padding: 8px 10px;
-    font-size: 24px;
+  color: var(--wave-blue);
+  border: 3px solid var(--wave-blue);
+  border-radius: 5px;
+  padding: 8px 10px;
+  font-size: 24px;
 }
+
+.btn-back:hover {
+  color: white;
+  background-color: var(--wave-blue);
+}
+
