@@ -8,6 +8,7 @@
   --roadway-gray: #dcdcdc;
   --land-gray: #f0f0f0;
   --line-pink: #d6078e;
+  --action-orange: #F38B00;
 }
 
 
@@ -45,7 +46,7 @@ li {
 }
 
 .urgent-banner {
-  background-color: #fdcd23;
+  background-color: var(--action-orange);
   padding: 2rem 0;
 }
 .urgent-banner a {
@@ -72,7 +73,7 @@ li {
 }
 
 .cost-list li {
-  font-size: 24px;
+  font-size: 1.2em;
 }
 
 .dollar-sign {
@@ -214,3 +215,6 @@ a.pbutton,
   background-color: var(--wave-blue);
 }
 
+h3.gb {
+  font-size: 1.3em;
+}
