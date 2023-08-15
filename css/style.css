@@ -153,6 +153,9 @@ h3 {
   background-color: rgb(255, 255, 255);
   color: #2a7897;
 }
+.accordion.active {
+  border-bottom: none;
+}
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
