@@ -1,11 +1,12 @@
 :root {
   --wave-blue: #2b376e;
   --wave-teal: #2a7997;
+  --dark-teal: #007297;
   --wave-green: #008281;
   --railway-ray: #5a5a5a;
   --highway-gray: #787878;
   --service-gray: #aaaaaa;
-  --roadway-gray: #dcdcdc;
+  --roadway-gray: #d9d9d9;
   --land-gray: #f0f0f0;
   --line-pink: #d6078e;
   --action-orange: #F38B00;
@@ -119,6 +120,10 @@ figcaption.s2:visited {
   top: 16px !important;
 }
 
+.sg-survey label{
+  font-weight: inherit;
+}
+
 .acc-icon {
   width: 35px;
   color: var(--wave-blue);
@@ -174,13 +179,8 @@ a.pbutton,
   margin-right: 18px !important;
 }
 
-@media (max-width: 768px) {
-  .footer-form {
-    flex-direction: column;
-  }
-  #story-2 {
-    flex-direction: column-reverse;
-  }
+.pinksurvey {
+  border-radius: 5px;
 }
 
 .story-card * {
@@ -194,10 +194,10 @@ a.pbutton,
   background-color: var(--wave-teal);
 }
 #story-2 .text-box {
-  background-color: var(--wave-blue);
+  background-color: var(--wave-green);
 }
 #story-3 .text-box {
-  background-color: var(--wave-green);
+  background-color: var(--wave-teal);
 }
 #highlights {
   overflow: hidden;
@@ -206,8 +206,13 @@ a.pbutton,
   color: var(--wave-blue);
   border: 3px solid var(--wave-blue);
   border-radius: 5px;
-  padding: 8px 10px;
+  padding: .3em .5em .2em;
   font-size: 24px;
+  font-weight: 600;
+}
+
+.btn-back:visited {
+  color: var(--wave-blue);
 }
 
 .btn-back:hover {
@@ -215,7 +220,56 @@ a.pbutton,
   background-color: var(--wave-blue);
 }
 
+
+/* --- Adds border radius to all the callout boxes ---  */
 h3.gb {
   font-size: 1.3em;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
+.callout {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+em {
+  font-size: 1.95rem;
+}
+.nav-anchor {
+  position: relative;
+}
+
+ul.dropdown-menu.show {
+  background-color: var(--roadway-gray) ;
+  text-align: center;
+  padding: 1rem;
+  width: min-content;
+  margin: 0 auto;
+  border: none !important;
+}
+a.dropdown-item:hover,
+a.dropdown-item.active {
+  background-color: transparent !important;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .footer-form {
+    flex-direction: column;
+  }
+  #story-2 {
+    flex-direction: column-reverse;
+  }
+  
+}
+@media (min-width: 768px) {
+  ul.dropdown-menu.show {
+    top: 4.9rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  
+}
