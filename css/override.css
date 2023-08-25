@@ -243,7 +243,7 @@ em {
 ul.dropdown-menu.show {
   background-color: var(--roadway-gray) ;
   text-align: center;
-  padding: 1rem;
+  padding: 2rem;
   width: min-content;
   margin: 0 auto;
   border: none !important;
