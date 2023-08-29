@@ -12,6 +12,9 @@
   --action-orange: #F38B00;
 }
 
+ul.no-style {
+  list-style: none;
+}
 
 li {
   font-size: 1.955rem;
