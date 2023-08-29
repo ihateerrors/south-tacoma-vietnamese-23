@@ -81,7 +81,12 @@ button {
 
 .pinksurvey {
   background-color: #eaeaea;
-  border: 2px solid #2a7997;;
+  border: 2px solid #d6078e;
+}
+
+.tealsurvey {
+  background-color: #eaeaea;
+  border: 2px solid var(--wave-teal);
 }
 
 .gb {
