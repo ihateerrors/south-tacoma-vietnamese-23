@@ -256,6 +256,10 @@ a.dropdown-item.active {
   background-color: transparent !important;
 }
 
+.dropdown-toggle {
+  white-space: normal;
+}
+
 .carousel-caption {
   color: inherit;
   position: static;
