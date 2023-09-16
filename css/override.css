@@ -266,6 +266,14 @@ a.dropdown-item.active {
   padding-top: 0;
 }
 
+.lift-text {
+  position: relative;
+  top: -2rem;
+}
+
+[for="sgE-7462204-1-5-element"] {
+  max-width: 100%;
+}
 
 @media (max-width: 768px) {
   .footer-form {
