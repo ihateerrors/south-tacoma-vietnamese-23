@@ -9,7 +9,7 @@
   --roadway-gray: #d9d9d9;
   --land-gray: #f0f0f0;
   --line-pink: #d6078e;
-  --action-orange: #F38B00;
+  --action-orange: #f38b00;
 }
 
 ul.no-style {
@@ -68,8 +68,6 @@ li {
   content: " >>";
 }
 
-
-
 .cost-list {
   list-style: none;
   text-align: center;
@@ -115,15 +113,14 @@ figcaption.s2 {
   color: var(--railway-gray);
 }
 figcaption.s2:visited {
-  color: var(--highway-gray)
+  color: var(--highway-gray);
 }
-
 
 .sg-survey li input {
   top: 16px !important;
 }
 
-.sg-survey label{
+.sg-survey label {
   font-weight: inherit;
 }
 
@@ -162,11 +159,10 @@ a.pbutton,
   font-weight: 600;
   font-size: 1.8rem;
   border-radius: 5px;
-  padding: .8rem 1.6rem;
+  padding: 0.8rem 1.6rem;
 }
 .pbutton {
   margin: 0 !important;
-
 }
 #sg_SubmitButton:hover,
 .pbutton:hover {
@@ -209,7 +205,7 @@ a.pbutton,
   color: var(--wave-blue);
   border: 3px solid var(--wave-blue);
   border-radius: 5px;
-  padding: .3em .5em .2em;
+  padding: 0.3em 0.5em 0.2em;
   font-size: 24px;
   font-weight: 600;
 }
@@ -222,7 +218,6 @@ a.pbutton,
   color: white;
   background-color: var(--wave-blue);
 }
-
 
 /* --- Adds border radius to all the callout boxes ---  */
 h3.gb {
@@ -244,7 +239,7 @@ em {
 }
 
 ul.dropdown-menu.show {
-  background-color: var(--roadway-gray) ;
+  background-color: var(--roadway-gray);
   text-align: center;
   padding: 2rem;
   width: min-content;
@@ -275,6 +270,11 @@ a.dropdown-item.active {
   max-width: 100%;
 }
 
+.callout-box.sticky-lg-top {
+  top: 80px;
+  z-index: 0;
+}
+
 @media (max-width: 768px) {
   .footer-form {
     flex-direction: column;
@@ -282,7 +282,6 @@ a.dropdown-item.active {
   #story-2 {
     flex-direction: column-reverse;
   }
-  
 }
 @media (min-width: 768px) {
   ul.dropdown-menu.show {
@@ -290,5 +289,4 @@ a.dropdown-item.active {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
   }
-  
 }
