@@ -152,7 +152,8 @@ figcaption.s2:visited {
 }
 a.pbutton,
 #sg_SubmitButton,
-.pbutton {
+.pbutton,
+.skip-nav-link:focus {
   color: var(--line-pink);
   background-color: #fff;
   border: 2px solid var(--line-pink);
@@ -165,7 +166,7 @@ a.pbutton,
   margin: 0 !important;
 }
 #sg_SubmitButton:hover,
-.pbutton:hover {
+.pbutton:hover{
   color: #ffffff;
   background: #d6078e;
 }
@@ -274,6 +275,18 @@ a.dropdown-item.active {
   top: 80px;
   z-index: 0;
 }
+.skip-nav-link {
+  position: absolute;
+  left: 1rem;
+  transform: translateY(-120%);
+  transition: transform 325ms ease-in;
+}
+
+.skip-nav-link:focus {
+  transform: translateY(20%);
+}
+
+
 
 @media (max-width: 768px) {
   .footer-form {
