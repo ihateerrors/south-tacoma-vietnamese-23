@@ -286,6 +286,32 @@ a.dropdown-item.active {
   transform: translateY(20%);
 }
 
+/* Custom Tooltip styles */
+.tooltip {
+  cursor: help;
+  max-width: 400px !important; /* Adjust the maximum width of the tooltip */
+}
+
+.tooltip-inner {
+  font-size: 1.7rem;
+  background-color: var(--wave-blue);
+  max-width: 100% !important;
+}
+.tooltip-anchor {
+  font-weight: 600;
+  border-bottom: 2px dashed gray;
+  color: black;
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+  cursor: help;
+
+}
+.tooltip-anchor:hover {
+  cursor: help;
+
+}
+
 
 
 @media (max-width: 768px) {
