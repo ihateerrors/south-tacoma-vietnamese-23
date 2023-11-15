@@ -292,10 +292,12 @@ a.dropdown-item.active {
   max-width: 400px !important; /* Adjust the maximum width of the tooltip */
 }
 
-.tooltip-inner {
+.tooltip-inner,
+.tip span {
   font-size: 1.7rem;
-  background-color: var(--wave-blue);
+  background-color: var(--wave-blue) !important;
   max-width: 100% !important;
+  color: white;
 }
 .tooltip-anchor {
   font-weight: 600;
