@@ -64,9 +64,9 @@ li {
   font-size: 20px;
 }
 
-.urgent-text::after {
+/* .urgent-text::after {
   content: " >>";
-}
+} */
 
 .cost-list {
   list-style: none;
